@@ -137,7 +137,8 @@ base |>
     
   across(.cols = where(is.numeric), 
          
-         .fns = ~ replace_na(., 0) ) ) |> 
+         .fns = ~ replace_na(., 0) ) ) |>
+  
   rio::export(x = _, "base_srag.xlsx")
 
 
