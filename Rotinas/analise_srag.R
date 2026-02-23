@@ -4,12 +4,7 @@ library(tidyverse)
 here::i_am("Rotinas/analise_srag.R")
 
 #Importação da base
-load(paste0(dirname(getwd()),"/bases/srag/Rdata/srag.RData"))
-
-
-#Importação da base
-x <- nanoparquet::read_parquet(paste0(dirname(getwd()),"/bases/srag/parquet/srag.parquet") )
-
+srag <- nanoparquet::read_parquet(paste0(dirname(getwd()),"/bases/srag/parquet/srag.parquet") )
 
 
 #Importação da tabela de municípios
