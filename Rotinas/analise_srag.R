@@ -7,6 +7,11 @@ here::i_am("Rotinas/analise_srag.R")
 load(paste0(dirname(getwd()),"/bases/srag/Rdata/srag.RData"))
 
 
+#Importação da base
+x <- nanoparquet::read_parquet(paste0(dirname(getwd()),"/bases/srag/parquet/srag.parquet") )
+
+
+
 #Importação da tabela de municípios
 readxl::read_excel("C:/Users/gabli/Desktop/Projetos/SIS/Bases Gerais/munics.xlsx" ) |>
   
